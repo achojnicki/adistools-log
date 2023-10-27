@@ -11,7 +11,7 @@ from time import strftime
 import sys
 import traceback
 
-class adistoolslog(adislog_methods):
+class Log(adislog_methods):
     def __init__(self,
                  debug:bool=False,
                  backends:list or array=['rabbitmq_emitter'],
