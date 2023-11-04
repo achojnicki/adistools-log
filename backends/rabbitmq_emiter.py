@@ -45,9 +45,9 @@ class rabbitmq_emiter:
         self._rabbitmq_channel.close()
         self._rabbitmq_connection.close()
         
-    def emit(self,**kwargs):
-        msg=dumps(kwargs)
-
+    def emit(self,msg):
+        
+        msg=dumps(msg)
         self._open_rabbitmq_connection()
         self._rabbitmq_channel.basic_publish(
             exchange="",
