@@ -30,7 +30,7 @@ class Log(adislog_methods):
             o=None        
             
             if a == 'rabbitmq_emitter':
-                from .Backends import rabbitmq_emiter
+                from .backends import rabbitmq_emiter
                 o=rabbitmq_emiter.rabbitmq_emiter(
                     rabbitmq_host=rabbitmq_host,
                     rabbitmq_port=rabbitmq_port,
