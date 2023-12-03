@@ -84,7 +84,6 @@ class Log(adislog_methods):
                     "cwd": self._probes.cwd,
                     "uid": self._probes.uid,
                     "gid": self._probes.gid,
-                    "username":self._probes.username   
                 },
                 "caller": self._probes.caller,
                 "app_specific":self._probes.parent

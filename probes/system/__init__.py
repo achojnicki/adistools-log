@@ -20,10 +20,6 @@ class System:
         return getcwd()
 
     @property
-    def username(self):
-        return getlogin()
-
-    @property
     def uid(self):
         return getuid()
 
